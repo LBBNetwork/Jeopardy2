@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Game>
+	<Version>1</Version>
+	<Show>Jeopardy</Show>
+
+  <GameTitle>Scratchpad</GameTitle>
+
+	<Jeopardy>
+
+    <DailyDouble1>4</DailyDouble1>
+    <DailyDouble2>0</DailyDouble2>
+    
+		<Category1>
+			<Title>CONVENTIONS</Title>			
+
+			<Clue1>SUFFERERS OF GALEOPHOBIA, THE FEAR OF THESE FIGH, SHOULDN'T BE WATCHING THE DISCOVERY CHANNEL DURING A CERTAIN WEEK OF PROGRAMMING EACH SUMMER</Clue1>
+			<Answer1>MEGAPLEX</Answer1>
+
+      <Clue2>CELEBRATING ALL THINGS FUZZY AND FURRY, IT'S HOSTED ANNUALLY IN PITTSBURGH, PA</Clue2>
+      <Answer2>Anthrocon</Answer2>
+
+      <Clue3>IT'S THE LARGEST MY LITTLE PONY CONVENTION</Clue3>
+      <Answer3>Bronycon</Answer3>
+
+      <!-- Daily Double! -->
+      <Clue4>THIS CONVENTION DESCRIBES ITSELF AS "THE LARGEST ANIME AND MANGA CONVENTION IN NORTH AMERICA"</Clue4>
+      <Answer4>Anime Expo</Answer4>
+
+      <Clue5>IN 2018 IT BOASTED 10,989 ATTENDEES, MAKING IT THE WORLD'S LARGEST FURRY CONVENTION</Clue5>
+      <Answer5>Midwest Furfest/MFF</Answer5>      
+		</Category1>
+
+    <Category2>
+      <Title>"D"EFINITIONS</Title>
+
+      <Clue6>A FINE POWDER THAT BUILDS UP ON SURFACES THAT HAVE NOT BEEN CLEANED IN A WHILE</Clue6>
+      <Answer6>Dust</Answer6>
+
+      <Clue7>An area where there has been a major disaster such as a flood, tornado, earthquake</Clue7>
+      <Answer7>Disaster Area</Answer7>
+
+      <Clue8>Something pleasing to eat that is considered rare or luxurious</Clue8>
+      <Answer8>Delicacy</Answer8>
+
+      <Clue9>A highly variable domestic mammal closely related to the gray wolf; its scientific name is canis familiaris</Clue9>
+      <Answer9>Dog</Answer9>
+
+      <Clue10>Not able to think or speak clearly especially because of fever or other illness</Clue10>
+      <Answer10>Delirious, Delerium</Answer10>
+  </Category2>
+
+    <Category3>
+      <Title>LAKES &amp; RIVERS</Title>
+
+      <Clue11>Category 3 Clue 1</Clue11>
+      <Answer11>CA1</Answer11>
+
+      <Clue12>Category 3 Clue 2</Clue12>
+      <Answer12>CA2</Answer12>
+
+      <Clue13>Category 3 Clue 3</Clue13>
+      <Answer13>CA3</Answer13>
+
+      <Clue14>Category 3 Clue 4</Clue14>
+      <Answer14>CA4</Answer14>
+
+      <Clue15>Category 3 Clue 5</Clue15>
+      <Answer15>CA5</Answer15>
+    </Category3>
+
+    <Category4>
+      <Title>SPACE</Title>
+
+      <Clue16>Category 4 Clue 1</Clue16>
+      <Answer16>CA1</Answer16>
+
+      <Clue17>Category 4 Clue 2</Clue17>
+      <Answer17>CA2</Answer17>
+
+      <Clue18>Category 4 Clue 3</Clue18>
+      <Answer18>CA3</Answer18>
+
+      <Clue19>Category 4 Clue 4</Clue19>
+      <Answer19>CA4</Answer19>
+
+      <Clue20>Category 4 Clue 5</Clue20>
+      <Answer20>CA5</Answer20>
+    </Category4>
+
+    <Category5>
+      <Title>THE OLD TESTAMENT</Title>
+
+      <Clue21>Category 5 Clue 1</Clue21>
+      <Answer21>CA1</Answer21>
+
+      <Clue22>Category 5 Clue 2</Clue22>
+      <Answer22>CA2</Answer22>
+
+      <Clue23>Category 5 Clue 3</Clue23>
+      <Answer23>CA3</Answer23>
+
+      <Clue24>Category 5 Clue 4</Clue24>
+      <Answer24>CA4</Answer24>
+
+      <Clue25>Category 5 Clue 5</Clue25>
+      <Answer25>CA5</Answer25>
+    </Category5>
+
+    <Category6>
+      <Title>CANDY, CANDY, CANDY</Title>
+
+      <Clue26>Category 6 Clue 1</Clue26>
+      <Answer26>CA1</Answer26>
+
+      <Clue27>Category 6 Clue 2</Clue27>
+      <Answer27>CA2</Answer27>
+
+      <Clue28>Category 6 Clue 3</Clue28>
+      <Answer28>CA3</Answer28>
+
+      <Clue29>Category 6 Clue 4</Clue29>
+      <Answer29>CA4</Answer29>
+
+      <Clue30>Category 6 Clue 5</Clue30>
+      <Answer30>CA5</Answer30>
+    </Category6>
+	</Jeopardy>
+
+
+	<DoubleJeopardy>
+
+    <DailyDouble1>4</DailyDouble1>
+    <DailyDouble2>30</DailyDouble2>
+    
+		<Category1>
+			<Title>DJ CONVENTIONS</Title>			
+
+			<Clue1>SUFFERERS OF GALEOPHOBIA, THE FEAR OF THESE FIGH, SHOULDN'T BE WATCHING THE DISCOVERY CHANNEL DURING A CERTAIN WEEK OF PROGRAMMING EACH SUMMER</Clue1>
+			<Answer1>MEGAPLEX</Answer1>
+
+      <Clue2>CELEBRATING ALL THINGS FUZZY AND FURRY, IT'S HOSTED ANNUALLY IN PITTSBURGH, PA</Clue2>
+      <Answer2>Anthrocon</Answer2>
+
+      <Clue3>IT'S THE LARGEST MY LITTLE PONY CONVENTION</Clue3>
+      <Answer3>Bronycon</Answer3>
+
+      <!-- Daily Double! -->
+      <Clue4>THIS CONVENTION DESCRIBES ITSELF AS "THE LARGEST ANIME AND MANGA CONVENTION IN NORTH AMERICA"</Clue4>
+      <Answer4>Anime Expo</Answer4>
+
+      <Clue5>IN 2018 IT BOASTED 10,989 ATTENDEES, MAKING IT THE WORLD'S LARGEST FURRY CONVENTION</Clue5>
+      <Answer5>Midwest Furfest/MFF</Answer5>      
+		</Category1>
+
+    <Category2>
+      <Title>DJ "D"EFINITIONS</Title>
+
+      <Clue6>A FINE POWDER THAT BUILDS UP ON SURFACES THAT HAVE NOT BEEN CLEANED IN A WHILE</Clue6>
+      <Answer6>Dust</Answer6>
+
+      <Clue7>An area where there has been a major disaster such as a flood, tornado, earthquake</Clue7>
+      <Answer7>Disaster Area</Answer7>
+
+      <Clue8>Something pleasing to eat that is considered rare or luxurious</Clue8>
+      <Answer8>Delicacy</Answer8>
+
+      <Clue9>A highly variable domestic mammal closely related to the gray wolf; its scientific name is canis familiaris</Clue9>
+      <Answer9>Dog</Answer9>
+
+      <Clue10>Not able to think or speak clearly especially because of fever or other illness</Clue10>
+      <Answer10>Delirious, Delerium</Answer10>
+  </Category2>
+
+    <Category3>
+      <Title>LAKES &amp; RIVERS</Title>
+
+      <Clue11>Category 3 Clue 1</Clue11>
+      <Answer11>CA1</Answer11>
+
+      <Clue12>Category 3 Clue 2</Clue12>
+      <Answer12>CA2</Answer12>
+
+      <Clue13>Category 3 Clue 3</Clue13>
+      <Answer13>CA3</Answer13>
+
+      <Clue14>Category 3 Clue 4</Clue14>
+      <Answer14>CA4</Answer14>
+
+      <Clue15>Category 3 Clue 5</Clue15>
+      <Answer15>CA5</Answer15>
+    </Category3>
+
+    <Category4>
+      <Title>SPACE</Title>
+
+      <Clue16>Category 4 Clue 1</Clue16>
+      <Answer16>CA1</Answer16>
+
+      <Clue17>Category 4 Clue 2</Clue17>
+      <Answer17>CA2</Answer17>
+
+      <Clue18>Category 4 Clue 3</Clue18>
+      <Answer18>CA3</Answer18>
+
+      <Clue19>Category 4 Clue 4</Clue19>
+      <Answer19>CA4</Answer19>
+
+      <Clue20>Category 4 Clue 5</Clue20>
+      <Answer20>CA5</Answer20>
+    </Category4>
+
+    <Category5>
+      <Title>THE OLD TESTAMENT</Title>
+
+      <Clue21>Category 5 Clue 1</Clue21>
+      <Answer21>CA1</Answer21>
+
+      <Clue22>Category 5 Clue 2</Clue22>
+      <Answer22>CA2</Answer22>
+
+      <Clue23>Category 5 Clue 3</Clue23>
+      <Answer23>CA3</Answer23>
+
+      <Clue24>Category 5 Clue 4</Clue24>
+      <Answer24>CA4</Answer24>
+
+      <Clue25>Category 5 Clue 5</Clue25>
+      <Answer25>CA5</Answer25>
+    </Category5>
+
+    <Category6>
+      <Title>CANDY, CANDY, CANDY</Title>
+
+      <Clue26>Category 6 Clue 1</Clue26>
+      <Answer26>CA1</Answer26>
+
+      <Clue27>Category 6 Clue 2</Clue27>
+      <Answer27>CA2</Answer27>
+
+      <Clue28>Category 6 Clue 3</Clue28>
+      <Answer28>CA3</Answer28>
+
+      <Clue29>Category 6 Clue 4</Clue29>
+      <Answer29>CA4</Answer29>
+
+      <Clue30>Category 6 Clue 5</Clue30>
+      <Answer30>DJ CA5</Answer30>
+    </Category6>
+	</DoubleJeopardy>
+
+  <FinalJeopardy>
+    <Title>EGYPTIAN MYTHOLOGY</Title>
+
+    <Clue1>SHE WAS THE DAUGHTER OF THE SUN GOD RA AND HER NAME MEANS "SHE OF THE OINTMENT JAR"</Clue1>
+    <Answer1>BASTET</Answer1>
+  </FinalJeopardy>
+</Game>

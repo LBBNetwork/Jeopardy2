@@ -1,0 +1,56 @@
+Jeopardy 2.0 RS-232 Comms Spec Sheet
+
+Assume all TX/RX values are their ASCII Decimal values unless otherwise specified. English punctuation used for sake of clarity.
+
+MCP SENDS TEST REQUEST
+MCP Sends: ! 33
+Pi Sends:  @ 64
+	>If both MCP and Pi received their respective data, then the two will be considered linked and multithreading will begin.
+
+PLAYER 1 RINGS IN
+Pi Sends: 1 49
+MCP Sends: nothing
+	>MCP will begin big board count down timer lights and highlight the player ringing in on the MCP's player groupbox
+
+PLAYER 2 RINGS IN
+Pi Sends: 2 50
+MCP Sends: nothing
+	>MCP will begin big board count down timer lights and highlight the player ringing in on the MCP's player groupbox
+
+PLAYER 3 RINGS IN
+Pi Sends: 3 51
+MCP Sends: nothing
+	>MCP will begin big board count down timer lights and highlight the player ringing in on the MCP's player groupbox
+
+PLAYER 1 TIME EXPIRED
+Pi Sends: 4 52
+MCP Sends: nothing
+	>MCP will turn the highlight off.
+
+PLAYER 2 TIME EXPIRED
+Pi Sends: 5 53
+MCP Sends: nothing
+	>MCP will turn the highlight off.
+
+PLAYER 3 TIME EXPIRED
+Pi Sends: 6 54
+MCP Sends: nothing
+	>MCP will turn the highlight off.
+
+PLAYER 1 CORRECT/INCORRECT
+Pi Sends: nothing
+MCP Sends: 7 55
+	>Pi & MCP will immediately terminate the countdown lights and lock the player out until the lockout switch is pressed.
+
+PLAYER 2 CORRECT/INCORRECT
+Pi Sends: nothing
+MCP Sends: 8 56
+	>Pi & MCP will immediately terminate the countdown lights and lock the player out until the lockout switch is pressed.
+
+PLAYER 3 CORRECT/INCORRECT
+Pi Sends: nothing
+MCP Sends: 9 57
+	>Pi & MCP will immediately terminate the countdown lights and lock the player out until the lockout switch is pressed.
+
+
+

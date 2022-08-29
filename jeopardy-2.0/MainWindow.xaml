@@ -1,0 +1,186 @@
+﻿<Window x:Class="jeopardy_2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jeopardy_2._0"
+        mc:Ignorable="d"
+        Title="Jeopardy 2.0 - Master Control Program" Height="733.334" Width="981.8" Closed="Window_Closed" Loaded="Window_Loaded" ResizeMode="NoResize">
+
+    <Grid>
+
+        <Grid Name="Gr_CatBtns" HorizontalAlignment="Left" Width="493" Margin="0,10,0,597" IsEnabled="False">
+
+            <Button Name="Btn_CA1" Click="Btn_CA1_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Height="75" >
+                <TextBlock Name="Tb_CA1" Text="Category 1" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button  Name="Btn_CA2" Click="Btn_CA2_Click" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Height="75">
+                <TextBlock Name="Tb_CA2" Text="Category 2" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button  Name="Btn_CA3" Click="Btn_CA3_Click" HorizontalAlignment="Left" Margin="170,10,0,0" VerticalAlignment="Top" Width="75" Height="75">
+                <TextBlock Name="Tb_CA3" Text="Category 3" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button  Name="Btn_CA4" Click="Btn_CA4_Click" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="75" Height="75">
+                <TextBlock Name="Tb_CA4" Text="Category 4" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button Name="Btn_CA5" Click="Btn_CA5_Click" HorizontalAlignment="Left" Margin="330,10,0,0" VerticalAlignment="Top" Width="75" Height="75">
+                <TextBlock Name="Tb_CA5" Text="Category 5" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+            <Button  Name="Btn_CA6" Click="Btn_CA6_Click" HorizontalAlignment="Left" Margin="410,10,0,0" VerticalAlignment="Top" Width="75" Height="75">
+                <TextBlock Name="Tb_CA6" Text="Category 6" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
+        </Grid>
+
+
+
+
+        <TextBox Name="TexB_ClueText" HorizontalAlignment="Left" Height="158" Margin="490,499,0,0" TextWrapping="Wrap" Text="Let's play Jeopardy!" VerticalAlignment="Top" Width="458" FontSize="20" IsEnabled="False"/>
+
+        <Grid HorizontalAlignment="Left" Height="184" Margin="10,504,0,0" VerticalAlignment="Top" Width="155" Background="#FFEEEEEE">
+            <Button Name="Btn_P1Add" Click="Btn_P1Add_Click" Content="Add" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="42" Background="#FF17FF00"/>
+            <Button Name="Btn_P1Lose" Click="Btn_P2Lose_Click"  Content="Lose" HorizontalAlignment="Left" Margin="103,41,0,0" VerticalAlignment="Top" Width="42" Background="Red"/>
+
+            <Label Content="$0" Name="Lbl_P1Score" HorizontalAlignment="Left" Margin="0,61,0,0" VerticalAlignment="Top" FontSize="20" Width="155"/>
+
+            <Label Content="Player 1 Daily Double" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,88,0,0"/>
+            <Button Name="Btn_P1DDWagerAdd" Click="Btn_P1DDWagerAdd_Click" Content="Add" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="42" Background="#FF17FF00"/>
+            <Button Name="Btn_P1DDWagerLose" Click="Btn_P1DDWagerLose_Click" Content="Lose" HorizontalAlignment="Left" Margin="103,149,0,0" VerticalAlignment="Top" Width="42" Background="Red"/>
+
+            <TextBox Name="Tb_P1DDWager" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" Text="000" VerticalAlignment="Top" Width="135"/>
+            <TextBox x:Name="Tb_P1Name" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top" Width="91"/>
+            <Button x:Name="Btn_SetP1Name" Click="Btn_SetP1Name_Click"  Content="Set" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="42"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="184" Margin="170,504,0,0" VerticalAlignment="Top" Width="155" Background="#FFEEEEEE">
+            <Button Name="Btn_P2Add" Click="Btn_P2Add_Click"  Content="Add" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="42" Background="#FF17FF00"/>
+            <Button Name="Btn_P2Lose" Click="Btn_P2Lose_Click_1" Content="Lose" HorizontalAlignment="Left" Margin="103,41,0,0" VerticalAlignment="Top" Width="42" Background="Red"/>
+
+            <Label Content="$0" Name="Lbl_P2Score" HorizontalAlignment="Left" Margin="0,61,0,0" VerticalAlignment="Top" FontSize="20" Width="155"/>
+
+            <Label Content="Player 2 Daily Double" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,88,0,0"/>
+            <Button Name="Btn_P2DDWagerAdd" Click="Btn_P2DDWagerAdd_Click" Content="Add" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="42" Background="#FF17FF00"/>
+            <Button Name="Btn_P2DDWagerLose" Click="Btn_P2DDWagerLose_Click" Content="Lose" HorizontalAlignment="Left" Margin="103,149,0,0" VerticalAlignment="Top" Width="42" Background="Red"/>
+
+            <TextBox Name="Tb_P2DDWager" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" Text="000" VerticalAlignment="Top" Width="135"/>
+            <TextBox x:Name="Tb_P2Name" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Player 2" VerticalAlignment="Top" Width="91"/>
+            <Button x:Name="Btn_SetP2Name" Click="Btn_SetP2Name_Click"  Content="Set" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="42"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="184" Margin="330,504,0,0" VerticalAlignment="Top" Width="155" Background="#FFEEEEEE">
+            <Button Name="Btn_P3Add" Click="Btn_P3Add_Click" Content="Add" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="42" Background="#FF17FF00"/>
+            <Button Name="Btn_P3Lose" Click="Btn_P3Lose_Click" Content="Lose" HorizontalAlignment="Left" Margin="103,41,0,0" VerticalAlignment="Top" Width="42" Background="Red"/>
+
+            <Label Content="$0" Name="Lbl_P3Score" HorizontalAlignment="Left" Margin="0,61,0,0" VerticalAlignment="Top" FontSize="20" Width="155"/>
+
+            <Label Content="Player 3 Daily Double" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,88,0,0"/>
+            <Button Name="Btn_P3DDWagerAdd" Click="Btn_P3DDWagerAdd_Click"  Content="Add" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="42" Background="#FF17FF00"/>
+            <Button Name="Btn_P3DDWagerLose" Click="Btn_P3DDWagerLose_Click" Content="Lose" HorizontalAlignment="Left" Margin="103,149,0,0" VerticalAlignment="Top" Width="42" Background="Red"/>
+
+            <TextBox Name="Tb_P3DDWager" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" Text="000" VerticalAlignment="Top" Width="135"/>
+            <TextBox x:Name="Tb_P3Name" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Player 3" VerticalAlignment="Top" Width="91"/>
+            <Button x:Name="Btn_SetP3Name" Click="Btn_SetP3Name_Click"  Content="Set" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="42"/>
+        </Grid>
+        <Grid Name="JeopardyControl" IsEnabled="False" HorizontalAlignment="Left" Height="117" Margin="498,61,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+            <Label Content="Round Control" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton Name="Rb_Jeopardy" Checked="Rb_Jeopardy_Click" Content="Jeopardy" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="Rb_DoubleJeopardy" Checked="Rb_DoubleJeopardy_Click" Content="Double Jeopardy" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="Rb_FinalJeopardy" Checked="Rb_FinalJeopardy_Click" Content="Final Jeopardy" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="121" Margin="782,57,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+            <Label Content="Daily Double" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <!--<Label Content="DD 1" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.246,0.659" FontSize="20" FontWeight="Bold" Width="117"/>-->
+            <Button Name="Btn_RevealDD" Click="Btn_RevealDD_Click" Content="Reveal Clue" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="117"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="121" Margin="498,184,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+            <Label Content="Round Timer (inactive)" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Content="Start" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,47,0,0" TextWrapping="Wrap" Text="11:00:00" VerticalAlignment="Top" Width="117"/>
+
+        </Grid>
+        <Grid Name="Gr_FinalJ" IsEnabled="False" HorizontalAlignment="Left" Height="121" Margin="640,184,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+            <Label Content="Final Jeopardy" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <!--<Label Content="30" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.246,0.659" FontSize="20" FontWeight="Bold" Width="117"/>-->
+            <Button Name="Btn_FJStart" Content="Start" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="117" Click="Btn_FJStart_Click"/>
+
+            <Button Name="Btn_FJCatReveal" Content="Category" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="66" Click="Btn_FJCatReveal_Click"/>
+
+            <Button Name="Btn_FJClueReveal" Content="Clue" HorizontalAlignment="Left" Margin="87,66,0,0" VerticalAlignment="Top" Width="40" Click="Btn_FJClueReveal_Click"/>
+
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="121" Margin="782,183,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+            <Label Content="RS232 Comms" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <ComboBox x:Name="RS232Selector" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Width="117"/>
+            <Button x:Name="RS232TestButton" Content="Test Selected Port" HorizontalAlignment="Left" Margin="11,66,0,0" VerticalAlignment="Top" Width="116" Click="RS232TestButton_Click"/>
+            <Button x:Name="RS232ActivateButton" Content="Activate RS-232!" HorizontalAlignment="Left" Margin="11,91,0,0" VerticalAlignment="Top" Width="116"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="121" Margin="640,57,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+            <Label Content="Clue Control" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button IsEnabled = "False" Name="Btn_HideClue" Click="Btn_HideClue_Click" Content="Hide Clue" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="117"/>
+            <Button IsEnabled = "False" x:Name="Btn_PlayAudio" Click="Btn_PlayAudio_Click" Content="Play Audio" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Width="117"/>
+            <!--<CheckBox x:Name="CB_EnableRemoteDisplay" Content="Remote Display" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Checked="CB_EnableRemoteDisplay_Checked"/>-->
+
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="121" Margin="498,310,0,0" VerticalAlignment="Top" Width="421" Background="#FFEEEEEE">
+            <Label Content="Sponsor Video Playback (not yet implemented)" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+            <Button x:Name="Btn_SponsorVideo1" Content="Video 1" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="127"/>
+            <Button x:Name="Btn_SponsorVideo2" Content="Video 2" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="127"/>
+            <Button x:Name="Btn_SponsorVideo3" Content="Video 3" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="127"/>
+            <Button x:Name="Btn_SponsorVideo4" Content="Video 4" HorizontalAlignment="Left" Margin="142,31,0,0" VerticalAlignment="Top" Width="127"/>
+
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="58" Margin="498,436,0,0" VerticalAlignment="Top" Width="421" Background="#FFEEEEEE">
+            <Label Content="Board Fill Options:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+            <RadioButton x:Name="Cb_Fill6Ding" Content="6 Dings" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" IsChecked="True"/>
+            <RadioButton x:Name="Cb_Fill1984" Content="1984 fill" HorizontalAlignment="Left" Margin="76,26,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="Cb_FillDblPoints" Content="Secret!" Checked="Cb_FillDblPoints_Checked" HorizontalAlignment="Left" Margin="142,26,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+
+        <Button Content="Load Game" Name="Btn_LoadGame" Click="Btn_LoadGame_Click" HorizontalAlignment="Left" Margin="498,10,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Name="Lbl_GameName" Content="Game Name Here..." HorizontalAlignment="Left" Margin="498,30,0,0" VerticalAlignment="Top"/>
+
+
+        <Label Name="LblDebug" Content="Version String" HorizontalAlignment="Left" Margin="640,7,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Tb_ClueAnswer" HorizontalAlignment="Left" Margin="565,661,0,0" TextWrapping="Wrap" Text="(Answer Goes Here)" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="Tb_ClueAnswer_Copy" HorizontalAlignment="Left" Margin="490,661,0,0" TextWrapping="Wrap" Text="What is:" VerticalAlignment="Top" FontSize="20"/>
+        <Grid Name="Gr_ClueValues" IsEnabled="False" HorizontalAlignment="Left" Height="414" Margin="5,95,0,0" VerticalAlignment="Top" Width="485">
+            <Button Content="" HorizontalAlignment="Left" Margin="5,9,0,0" VerticalAlignment="Top" Width="75" Height="75" x:Name="Btn_CA1CL1" Click="Btn_CA1CL1_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="5,89,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA1CL2" Click="Btn_CA1CL2_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="5,169,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA1CL3" Click="Btn_CA1CL3_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="5,249,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA1CL4" Click="Btn_CA1CL4_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="5,329,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA1CL5" Click="Btn_CA1CL5_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="85,9,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA2CL1" Click="Btn_CA2CL1_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="85,89,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA2CL2" Click="Btn_CA2CL2_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="85,169,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA2CL3" Click="Btn_CA2CL3_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="85,249,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA2CL4" Click="Btn_CA2CL4_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="85,329,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA2CL5" Click="Btn_CA2CL5_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="165,9,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA3CL1" Click="Btn_CA3CL1_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="165,89,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA3CL2" Click="Btn_CA3CL2_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="165,169,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA3CL3" Click="Btn_CA3CL3_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="165,249,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA3CL4" Click="Btn_CA3CL4_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="165,329,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA3CL5" Click="Btn_CA3CL5_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="245,9,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA4CL1" Click="Btn_CA4CL1_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="245,89,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA4CL2" Click="Btn_CA4CL2_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="245,169,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA4CL3" Click="Btn_CA4CL3_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="245,249,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA4CL4" Click="Btn_CA4CL4_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="245,329,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA4CL5" Click="Btn_CA4CL5_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="325,9,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA5CL1" Click="Btn_CA5CL1_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="325,89,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA5CL2" Click="Btn_CA5CL2_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="325,169,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA5CL3" Click="Btn_CA5CL3_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="325,249,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA5CL4" Click="Btn_CA5CL4_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="325,329,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA5CL5" Click="Btn_CA5CL5_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="405,9,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA6CL1" Click="Btn_CA6CL1_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="405,90,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA6CL2" Click="Btn_CA6CL2_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="405,169,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA6CL3" Click="Btn_CA6CL3_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="405,249,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA6CL4" Click="Btn_CA6CL4_Click"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="405,329,0,0" VerticalAlignment="Top" Width="75" Height="75" Name="Btn_CA6CL5" Click="Btn_CA6CL5_Click"/>
+        </Grid>
+
+
+    </Grid>
+</Window>

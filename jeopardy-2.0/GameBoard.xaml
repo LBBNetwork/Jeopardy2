@@ -1,0 +1,178 @@
+﻿<Window x:Class="jeopardy_2._0.GameBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jeopardy_2._0"
+        mc:Ignorable="d"
+        Title="GameBoard" Height="1080" Width="1920" WindowStartupLocation="Manual" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded" Topmost="False" Closing="Window_Closing">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="bitmap.png"/>
+        </Grid.Background>
+
+        <!-- Category Titles -->
+        <Label Margin="257,33,1441,922" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GameBoard_Tb_Ca1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="30" Width="192" />
+        </Label>
+        <Label Margin="495,33,1203,922" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GameBoard_Tb_Ca2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="30" Width="192"/>
+        </Label>
+        <Label Margin="733,33,965,922" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GameBoard_Tb_Ca3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="30" Width="192"/>
+        </Label>
+        <Label Margin="969,33,729,922" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GameBoard_Tb_Ca4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="30" Width="192"/>
+        </Label>
+        <Label Margin="1205,33,493,922" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GameBoard_Tb_Ca5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="30" Width="192"/>
+        </Label>
+        <Label Margin="1442,33,256,922" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GameBoard_Tb_Ca6" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="30" Width="192"/>
+        </Label>
+
+        <!-- Clue Values -->
+        <Label Margin="257,196,1441,759" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca1C1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="257,335,1441,620" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca1C2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="257,477,1441,478" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca1C3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="257,618,1441,337" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca1C4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="257,757,1441,198" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca1C5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="495,196,1203,759" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca2C1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="495,338,1203,617" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca2C2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="495,480,1203,475" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca2C3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="495,621,1203,334" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca2C4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="495,760,1203,195" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca2C5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="733,196,965,759" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca3C1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="733,338,965,617" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca3C2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="733,480,965,475" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca3C3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="733,621,965,334" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca3C4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="733,760,965,195" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca3C5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="969,196,729,759" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca4C1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="969,338,729,617" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca4C2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="969,480,729,475" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca4C3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="969,621,729,334" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca4C4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="969,760,729,195" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca4C5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1205,193,493,762" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca5C1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1205,335,493,620" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca5C2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1205,477,493,478" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca5C3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1205,618,493,337" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca5C4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1205,757,493,198" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca5C5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1442,196,256,759" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca6C1" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1442,338,256,617" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca6C2" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1442,480,256,475" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca6C3" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1442,621,256,334" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca6C4" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+        <Label Margin="1442,760,256,195" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Helvetica LT Compressed" FontSize="24" Width="222" Height="125">
+            <TextBlock Name="GB_Tb_Ca6C5" TextWrapping="WrapWithOverflow" Text="" TextAlignment="Center" FontSize="100" Width="192" FontFamily="Swiss911 UCm BT" Foreground="#FFE2B828"/>
+        </Label>
+
+        <Grid x:Name="Grid_ClueDisplay">
+            <Grid.Background>
+                <ImageBrush ImageSource="cluebg.png"/>
+            </Grid.Background>
+
+            <Label Name="Lbl_Bg" Margin="10,10,-0.5,5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="Black" HorizontalAlignment="Center" FontFamily="Korinna BT" FontSize="100" Width="1800" Height="920">
+                <TextBlock Name="TB_BGText" TextWrapping="WrapWithOverflow" Text="THIS 2016 DISNEY BUDDY COP FILM IS SET IN A WORLD WHERE &quot;ANYONE CAN BE ANYTHING&quot;" TextAlignment="Center"/>
+            </Label>
+
+            <Label x:Name="Lbl_Fg" Margin="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" FontFamily="Korinna BT" FontSize="100" Width="1800" Height="920">
+                <TextBlock Name="TB_FGText" TextWrapping="WrapWithOverflow" Text="THIS 2016 DISNEY BUDDY COP FILM IS SET IN A WORLD WHERE &quot;ANYONE CAN BE ANYTHING&quot;" TextAlignment="Center"/>
+            </Label>
+        </Grid>
+
+        <!-- Player Elements -->
+
+        <Grid Name="Grid_PlayerScores" Visibility="Visible" HorizontalAlignment="Left" Height="124" Margin="0,956,0,0" VerticalAlignment="Top" Width="1920" Background="Black">
+
+            <Grid HorizontalAlignment="Left" Height="178" Margin="260,0,0,0" VerticalAlignment="Top" Width="456">
+                <Label x:Name="GB_Lbl_P1Name" Content="Player 1" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe Script" FontSize="36" Width="456" Margin="0,23,0,0" />
+                <Label x:Name="GB_Lbl_P1Score" Content="$0" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Helvetica LT Compressed" FontSize="36"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Height="36" Margin="10,0,0,0" VerticalAlignment="Top" Width="436" Source="playerlightoff.png"/>
+                <Label x:Name="GB_P1_Correct" Content="●" HorizontalAlignment="Left" Margin="414,23,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+            </Grid>
+
+            <Grid HorizontalAlignment="Left" Height="178" Margin="738,0,0,0" VerticalAlignment="Top" Width="456">
+                <Label Name="GB_Lbl_P2Name" Content="Player 2" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe Script" FontSize="36" Width="456" Margin="0,23,0,0" />
+                <Label Name="GB_Lbl_P2Score" Content="$0" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Helvetica LT Compressed" FontSize="36"/>
+                <Image HorizontalAlignment="Left" Height="36" Margin="10,0,0,0" VerticalAlignment="Top" Width="436" Source="playerlightoff.png"/>
+                <Label x:Name="GB_P2_Correct" Content="●" HorizontalAlignment="Left" Margin="414,23,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+
+            </Grid>
+
+            <Grid HorizontalAlignment="Left" Height="178" Margin="1224,0,0,0" VerticalAlignment="Top" Width="456">
+                <Label Name="GB_Lbl_P3Name" Content="Player 3" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe Script" FontSize="36" Width="456" Margin="0,23,0,0" />
+                <Label Name="GB_Lbl_P3Score" Content="$0" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Helvetica LT Compressed" FontSize="36"/>
+                <Image HorizontalAlignment="Left" Height="36" Margin="10,0,0,0" VerticalAlignment="Top" Width="436" Source="playerlightoff.png"/>
+                <Label x:Name="GB_P3_Correct" Content="●" HorizontalAlignment="Left" Margin="414,23,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+            </Grid>
+
+
+
+
+        </Grid>
+
+        <Image x:Name="Img_SplashScr" HorizontalAlignment="Left" Height="683" Margin="259,197,0,0" VerticalAlignment="Top" Width="1404" Source="splash_unbrand.png" />
+
+        <Grid x:Name="GB_VideoClueDisplay" Height="1080" Width="1920" HorizontalAlignment="Left" Margin="0,0,0,0" >
+            <MediaElement x:Name="GB_VideoPlayer" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" LoadedBehavior="Manual" Margin="0,0,0,0"/>
+        </Grid>
+
+    </Grid>
+</Window>

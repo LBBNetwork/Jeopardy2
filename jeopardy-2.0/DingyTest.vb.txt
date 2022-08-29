@@ -1,0 +1,95 @@
+﻿DingyTest (Current Jeopardy board fill animation)
+as seen in Jeopardy 1.0
+Added only for reference; will be converted to C# later
+
+
+
+Public Shared BoardFill As New ArrayList
+
+    Private Sub DingyTest_Tick(sender As Object, e As EventArgs) Handles DingyTest.Tick
+        Dim myRandom As Random = New Random()
+        Dim rn As Integer = 0
+
+        Dim dingyint As Integer = 0
+ReRand:
+
+        Randomize()
+        Rnd()
+
+        rn = myRandom.Next(7, 36)
+        If FilledLabels < 609 Then
+            If BoardFill.Contains(rn) Then
+                GoTo ReRand
+            Else
+                ' select five random positions on the board per tick of the timer (85ms)
+
+                If rn > 6 And rn < 13 Then
+                    Dim _200Dollar As Label = CType(Form1.Controls("Label" & rn), Label)
+                    _200Dollar.Text = "$200"
+                ElseIf rn > 12 And rn < 19 Then
+                    Dim _400Dollar As Label = CType(Form1.Controls("Label" & rn), Label)
+                    _400Dollar.Text = "$400"
+                ElseIf rn > 18 And rn < 25 Then
+                    Dim _600Dollar As Label = CType(Form1.Controls("Label" & rn), Label)
+                    _600Dollar.Text = "$600"
+                ElseIf rn > 24 And rn < 31 Then
+                    Dim _800Dollar As Label = CType(Form1.Controls("Label" & rn), Label)
+                    _800Dollar.Text = "$800"
+                ElseIf rn > 30 And rn < 37 Then
+                    Dim _1000Dollar As Label = CType(Form1.Controls("Label" & rn), Label)
+                    _1000Dollar.Text = "$1000"
+                End If
+
+                BoardFill.Add(rn)
+                dingyint = dingyint + 1
+                FilledLabels = FilledLabels + rn
+
+
+            End If
+        Else
+
+        End If
+
+        If FilledLabels < 609 Then
+            If dingyint < 5 Then
+                GoTo ReRand
+            End If
+        Else
+            Form1.Label36.Text = "$1000"
+            DingyTest.Stop()
+        End If
+
+    End Sub
+
+
+
+
+
+int BoardFill[] = new int[31]
+
+test:
+Random Rnd = new Random(Guid.NewGuid().GetHashCode());
+int rn = 0;
+
+rn = Rnd.Next(1, 30)
+
+if(FilledLabels < 609)
+{
+	if(BoardFill.Contains(rn)
+	{
+		goto test;
+	}
+	else
+	{
+		if(rn > 1 && < 5)
+		if(rn > 6 && < 10)
+		if(rn > 11 && < 15)
+		if(rn > 16 && < 20)
+		if(rn > 21 && < 25)
+		if(rn > 26 && < 30)
+
+		BoardFill[i].Add(rn)
+		FilledLabels = FilledLabels + rn
+	}
+}
+
