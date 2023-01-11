@@ -371,8 +371,6 @@ namespace jeopardy_2._0
         {
             VideoRuntime.Tick += VideoRuntime_Tick;
 
-
-
             try
             {
                 gb.GB_VideoPlayer.Source = new Uri(VideoPath, UriKind.Absolute);
@@ -3155,6 +3153,26 @@ namespace jeopardy_2._0
             gb.GB_Tb_Ca6C3.Text = "$600";
             gb.GB_Tb_Ca6C4.Text = "$800";
             gb.GB_Tb_Ca6C5.Text = "$1000";
+        }
+
+        private void Btn_SponsorVideo1_Click(object sender, RoutedEventArgs e)
+        {
+            PlayVideoAndDispose("C:\\Videos\\Vid1.mp4");
+        }
+
+        private void Btn_SponsorVideo2_Click(object sender, RoutedEventArgs e)
+        {
+            PlayVideoAndDispose("C:\\Videos\\Vid2.mp4");
+        }
+
+        private void Btn_SponsorVideo3_Click(object sender, RoutedEventArgs e)
+        {
+            PlayVideoAndDispose("C:\\Videos\\Vid3.mp4");
+        }
+
+        private void Btn_SponsorVideo4_Click(object sender, RoutedEventArgs e)
+        {
+            PlayVideoAndDispose("C:\\Videos\\Vid4.mp4");
         }
     }
 }

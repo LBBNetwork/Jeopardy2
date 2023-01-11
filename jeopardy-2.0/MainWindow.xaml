@@ -107,7 +107,7 @@
 
         </Grid>
 
-        <Grid HorizontalAlignment="Left" Height="121" Margin="782,183,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE">
+        <Grid HorizontalAlignment="Left" Height="121" Margin="782,183,0,0" VerticalAlignment="Top" Width="137" Background="#FFEEEEEE" IsEnabled="False">
             <Label Content="RS232 Comms" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <ComboBox x:Name="RS232Selector" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Width="117"/>
             <Button x:Name="RS232TestButton" Content="Test Selected Port" HorizontalAlignment="Left" Margin="11,66,0,0" VerticalAlignment="Top" Width="116" Click="RS232TestButton_Click"/>
@@ -123,12 +123,13 @@
         </Grid>
 
         <Grid HorizontalAlignment="Left" Height="121" Margin="498,310,0,0" VerticalAlignment="Top" Width="421" Background="#FFEEEEEE">
-            <Label Content="Sponsor Video Playback (not yet implemented)" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="Sponsor Video Playback" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-            <Button x:Name="Btn_SponsorVideo1" Content="Video 1" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="127"/>
-            <Button x:Name="Btn_SponsorVideo2" Content="Video 2" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="127"/>
-            <Button x:Name="Btn_SponsorVideo3" Content="Video 3" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="127"/>
-            <Button x:Name="Btn_SponsorVideo4" Content="Video 4" HorizontalAlignment="Left" Margin="142,31,0,0" VerticalAlignment="Top" Width="127"/>
+            <Button x:Name="Btn_SponsorVideo1" Content="Video 1" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="127" Click="Btn_SponsorVideo1_Click"/>
+            <Button x:Name="Btn_SponsorVideo2" Content="Video 2" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="127" Click="Btn_SponsorVideo2_Click"/>
+            <Button x:Name="Btn_SponsorVideo3" Content="Video 3" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="127" Click="Btn_SponsorVideo3_Click"/>
+            <Button x:Name="Btn_SponsorVideo4" Content="Video 4" HorizontalAlignment="Left" Margin="142,31,0,0" VerticalAlignment="Top" Width="127" Click="Btn_SponsorVideo4_Click"/>
+            <Label Content="PUT IN C:\VIDEOS ! FILENAME VID1.MP4 ETC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="142,52,0,0" Height="52"/>
 
         </Grid>
 

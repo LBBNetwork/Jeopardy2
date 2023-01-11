@@ -1,4 +1,4 @@
-Jeopardy 2.0 RS-232 Comms Spec Sheet
+Jeopardy 2.0 RS-232 Comms Spec Sheet!
 
 Assume all TX/RX values are their ASCII Decimal values unless otherwise specified. English punctuation used for sake of clarity.
 
