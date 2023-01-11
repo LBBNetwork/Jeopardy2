@@ -104,12 +104,12 @@ namespace jeopardy_2._0
 
             InitClueArrays();
 
-            File.WriteAllText(@"data\local\score1", "0");
-            File.WriteAllText(@"data\local\score2", "0");
-            File.WriteAllText(@"data\local\score3", "0");
-
             try
             {
+                File.WriteAllText(@"data\local\score1", "0");
+                File.WriteAllText(@"data\local\score2", "0");
+                File.WriteAllText(@"data\local\score3", "0");
+
                 if (File.Exists(@"data\local\clueopen"))
                 {
                     File.Delete(@"data\local\clueopen");
@@ -117,7 +117,7 @@ namespace jeopardy_2._0
             }
             catch (Exception)
             {
-
+                MessageBox.Show("Warning: Error trying to init the local files. Do they exist?\n");
             }
         }
 

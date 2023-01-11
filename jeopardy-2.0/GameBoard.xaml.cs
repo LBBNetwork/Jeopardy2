@@ -45,13 +45,23 @@ namespace jeopardy_2._0
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
+
             try
             {
                 Screen scr = Screen.AllScreens[0];
 
                 System.Drawing.Rectangle rect = scr.WorkingArea;
+
+#if DEBUGSCREEN
+                System.Windows.MessageBox.Show("This version of Jeopardy was compiled with DEBUGSCREEN set to true!\nIf you want to play Jeopardy correctly, recompile as DEBUG or RETAIL.\n(and if you're on-stage at a con, may God have mercy on your soul\nand may you have Visual Studio on your computer)");
+
+                this.Top = 000;
+                this.Left = 200;
+#else   
                 this.Top = rect.Top;
                 this.Left = rect.Left;
+#endif
             }
             catch
             {
@@ -69,7 +79,7 @@ namespace jeopardy_2._0
             }
             catch
             {
-
+                System.Windows.MessageBox.Show("Warning: We couldn't load \\data\\gfx\\splash.png for some reason");
             }
             
 
